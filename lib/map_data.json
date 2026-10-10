@@ -1,0 +1,1692 @@
+[
+  {
+    "kabupaten": "KABUPATEN BOGOR",
+    "lat": -6.5944,
+    "lng": 106.7891,
+    "data": {
+      "2018": {
+        "RUMAH TANGGA": 3,
+        "TOTAL": 6,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 2,
+        "SEKOLAH": 1,
+        "FASILITAS UMUM": 0,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2019": {
+        "RUMAH TANGGA": 4,
+        "TOTAL": 10,
+        "TEMPAT KEJADIAN": 1,
+        "LAINNYA": 4,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 1,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2020": {
+        "RUMAH TANGGA": 6,
+        "TOTAL": 13,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 2,
+        "SEKOLAH": 4,
+        "FASILITAS UMUM": 1,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2021": {
+        "RUMAH TANGGA": 4,
+        "TOTAL": 21,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 15,
+        "SEKOLAH": 1,
+        "FASILITAS UMUM": 1,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2022": {
+        "RUMAH TANGGA": 15,
+        "TOTAL": 33,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 15,
+        "SEKOLAH": 2,
+        "FASILITAS UMUM": 1,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2023": {
+        "RUMAH TANGGA": 28,
+        "TOTAL": 72,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 37,
+        "SEKOLAH": 6,
+        "FASILITAS UMUM": 1,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2024": {
+        "RUMAH TANGGA": 42,
+        "TOTAL": 70,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 24,
+        "SEKOLAH": 3,
+        "FASILITAS UMUM": 1,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      }
+    }
+  },
+  {
+    "kabupaten": "KABUPATEN SUKABUMI",
+    "lat": -6.9744,
+    "lng": 106.6317,
+    "data": {
+      "2018": {
+        "RUMAH TANGGA": 8,
+        "TOTAL": 77,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 69,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 0,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2019": {
+        "RUMAH TANGGA": 13,
+        "TOTAL": 120,
+        "TEMPAT KEJADIAN": 0,
+        "LAINNYA": 107,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 0,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2020": {
+        "RUMAH TANGGA": 23,
+        "TOTAL": 126,
+        "TEMPAT KERJA": 5,
+        "LAINNYA": 93,
+        "SEKOLAH": 4,
+        "FASILITAS UMUM": 1,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2021": {
+        "RUMAH TANGGA": 42,
+        "TOTAL": 71,
+        "TEMPAT KERJA": 2,
+        "LAINNYA": 25,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 2,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2022": {
+        "RUMAH TANGGA": 34,
+        "TOTAL": 138,
+        "TEMPAT KERJA": 27,
+        "LAINNYA": 73,
+        "SEKOLAH": 1,
+        "FASILITAS UMUM": 3,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2023": {
+        "RUMAH TANGGA": 28,
+        "TOTAL": 255,
+        "TEMPAT KERJA": 45,
+        "LAINNYA": 168,
+        "SEKOLAH": 11,
+        "FASILITAS UMUM": 3,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2024": {
+        "RUMAH TANGGA": 21,
+        "TOTAL": 235,
+        "TEMPAT KERJA": 13,
+        "LAINNYA": 179,
+        "SEKOLAH": 9,
+        "FASILITAS UMUM": 3,
+        "LEMBAGA PENDIDIKAN KILAT": 10
+      }
+    }
+  },
+  {
+    "kabupaten": "KABUPATEN CIANJUR",
+    "lat": -6.8168,
+    "lng": 107.1425,
+    "data": {
+      "2018": {
+        "RUMAH TANGGA": 3,
+        "TOTAL": 4,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 1,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 0,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2019": {
+        "RUMAH TANGGA": 1,
+        "TOTAL": 4,
+        "TEMPAT KEJADIAN": 1,
+        "LAINNYA": 2,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 0,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2020": {
+        "RUMAH TANGGA": 0,
+        "TOTAL": 0,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 0,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 0,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2021": {
+        "RUMAH TANGGA": 1,
+        "TOTAL": 4,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 0,
+        "SEKOLAH": 3,
+        "FASILITAS UMUM": 0,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2022": {
+        "RUMAH TANGGA": 29,
+        "TOTAL": 66,
+        "TEMPAT KERJA": 1,
+        "LAINNYA": 32,
+        "SEKOLAH": 2,
+        "FASILITAS UMUM": 2,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2023": {
+        "RUMAH TANGGA": 83,
+        "TOTAL": 139,
+        "TEMPAT KERJA": 6,
+        "LAINNYA": 17,
+        "SEKOLAH": 6,
+        "FASILITAS UMUM": 27,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2024": {
+        "RUMAH TANGGA": 60,
+        "TOTAL": 171,
+        "TEMPAT KERJA": 3,
+        "LAINNYA": 17,
+        "SEKOLAH": 69,
+        "FASILITAS UMUM": 22,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      }
+    }
+  },
+  {
+    "kabupaten": "KABUPATEN BANDUNG",
+    "lat": -7.0505,
+    "lng": 107.6318,
+    "data": {
+      "2018": {
+        "RUMAH TANGGA": 21,
+        "TOTAL": 45,
+        "TEMPAT KERJA": 1,
+        "LAINNYA": 7,
+        "SEKOLAH": 7,
+        "FASILITAS UMUM": 9,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2019": {
+        "RUMAH TANGGA": 36,
+        "TOTAL": 64,
+        "TEMPAT KEJADIAN": 1,
+        "LAINNYA": 2,
+        "SEKOLAH": 3,
+        "FASILITAS UMUM": 22,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2020": {
+        "RUMAH TANGGA": 67,
+        "TOTAL": 82,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 6,
+        "SEKOLAH": 3,
+        "FASILITAS UMUM": 6,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2021": {
+        "RUMAH TANGGA": 66,
+        "TOTAL": 91,
+        "TEMPAT KERJA": 1,
+        "LAINNYA": 11,
+        "SEKOLAH": 1,
+        "FASILITAS UMUM": 12,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2022": {
+        "RUMAH TANGGA": 81,
+        "TOTAL": 151,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 14,
+        "SEKOLAH": 3,
+        "FASILITAS UMUM": 53,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2023": {
+        "RUMAH TANGGA": 89,
+        "TOTAL": 142,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 2,
+        "SEKOLAH": 7,
+        "FASILITAS UMUM": 44,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2024": {
+        "RUMAH TANGGA": 88,
+        "TOTAL": 130,
+        "TEMPAT KERJA": 2,
+        "LAINNYA": 16,
+        "SEKOLAH": 8,
+        "FASILITAS UMUM": 16,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      }
+    }
+  },
+  {
+    "kabupaten": "KABUPATEN GARUT",
+    "lat": -7.2149,
+    "lng": 107.9091,
+    "data": {
+      "2018": {
+        "RUMAH TANGGA": 5,
+        "TOTAL": 8,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 1,
+        "SEKOLAH": 1,
+        "FASILITAS UMUM": 1,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2019": {
+        "RUMAH TANGGA": 9,
+        "TOTAL": 13,
+        "TEMPAT KEJADIAN": 0,
+        "LAINNYA": 2,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 2,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2020": {
+        "RUMAH TANGGA": 3,
+        "TOTAL": 7,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 4,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 0,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2021": {
+        "RUMAH TANGGA": 6,
+        "TOTAL": 12,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 4,
+        "SEKOLAH": 1,
+        "FASILITAS UMUM": 1,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2022": {
+        "RUMAH TANGGA": 2,
+        "TOTAL": 2,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 0,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 0,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2023": {
+        "RUMAH TANGGA": 111,
+        "TOTAL": 133,
+        "TEMPAT KERJA": 1,
+        "LAINNYA": 15,
+        "SEKOLAH": 2,
+        "FASILITAS UMUM": 4,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2024": {
+        "RUMAH TANGGA": 84,
+        "TOTAL": 150,
+        "TEMPAT KERJA": 1,
+        "LAINNYA": 59,
+        "SEKOLAH": 6
+      }
+    }
+  },
+  {
+    "kabupaten": "KABUPATEN TASIKMALAYA",
+    "lat": -7.3274,
+    "lng": 108.0863,
+    "data": {
+      "2018": {
+        "RUMAH TANGGA": 12,
+        "TOTAL": 43,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 10,
+        "SEKOLAH": 2,
+        "FASILITAS UMUM": 19,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2019": {
+        "RUMAH TANGGA": 0,
+        "TOTAL": 1,
+        "TEMPAT KEJADIAN": 0,
+        "LAINNYA": 1,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 0,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2020": {
+        "RUMAH TANGGA": 32,
+        "TOTAL": 49,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 11,
+        "SEKOLAH": 3,
+        "FASILITAS UMUM": 3,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2021": {
+        "RUMAH TANGGA": 0,
+        "TOTAL": 2,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 2,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 0,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2022": {
+        "RUMAH TANGGA": 71,
+        "TOTAL": 87,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 3,
+        "SEKOLAH": 2,
+        "FASILITAS UMUM": 9,
+        "LEMBAGA PENDIDIKAN KILAT": 2
+      },
+      "2023": {
+        "RUMAH TANGGA": 138,
+        "TOTAL": 159,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 2,
+        "SEKOLAH": 5,
+        "FASILITAS UMUM": 10,
+        "LEMBAGA PENDIDIKAN KILAT": 4
+      }
+    }
+  },
+  {
+    "kabupaten": "KABUPATEN CIAMIS",
+    "lat": -7.3269,
+    "lng": 108.3536,
+    "data": {
+      "2018": {
+        "RUMAH TANGGA": 7,
+        "TOTAL": 19,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 12,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 0,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2019": {
+        "RUMAH TANGGA": 3,
+        "TOTAL": 3,
+        "TEMPAT KEJADIAN": 0,
+        "LAINNYA": 0,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 0,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2020": {
+        "RUMAH TANGGA": 8,
+        "TOTAL": 16,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 8,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 0,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2021": {
+        "RUMAH TANGGA": 4,
+        "TOTAL": 18,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 14,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 0,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2022": {
+        "RUMAH TANGGA": 7,
+        "TOTAL": 10,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 3,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 0,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2023": {
+        "RUMAH TANGGA": 12,
+        "TOTAL": 35,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 2,
+        "SEKOLAH": 13,
+        "FASILITAS UMUM": 8,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      }
+    }
+  },
+  {
+    "kabupaten": "KABUPATEN KUNINGAN",
+    "lat": -6.9757,
+    "lng": 108.4831,
+    "data": {
+      "2018": {
+        "RUMAH TANGGA": 6,
+        "TOTAL": 18,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 6,
+        "SEKOLAH": 6,
+        "FASILITAS UMUM": 0,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2019": {
+        "RUMAH TANGGA": 2,
+        "TOTAL": 3,
+        "TEMPAT KEJADIAN": 0,
+        "LAINNYA": 0,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 1,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2020": {
+        "RUMAH TANGGA": 7,
+        "TOTAL": 10,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 2,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 1,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2021": {
+        "RUMAH TANGGA": 1,
+        "TOTAL": 19,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 18,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 0,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2022": {
+        "RUMAH TANGGA": 12,
+        "TOTAL": 37,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 21,
+        "SEKOLAH": 1,
+        "FASILITAS UMUM": 2,
+        "LEMBAGA PENDIDIKAN KILAT": 1
+      },
+      "2023": {
+        "RUMAH TANGGA": 43,
+        "TOTAL": 117,
+        "TEMPAT KERJA": 2,
+        "LAINNYA": 51,
+        "SEKOLAH": 12,
+        "FASILITAS UMUM": 9,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      }
+    }
+  },
+  {
+    "kabupaten": "KABUPATEN CIREBON",
+    "lat": -6.7382,
+    "lng": 108.5518,
+    "data": {
+      "2018": {
+        "RUMAH TANGGA": 17,
+        "TOTAL": 22,
+        "TEMPAT KERJA": 1,
+        "LAINNYA": 1,
+        "SEKOLAH": 1,
+        "FASILITAS UMUM": 2,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2019": {
+        "RUMAH TANGGA": 61,
+        "TOTAL": 104,
+        "TEMPAT KEJADIAN": 2,
+        "LAINNYA": 16,
+        "SEKOLAH": 14,
+        "FASILITAS UMUM": 11,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2020": {
+        "RUMAH TANGGA": 28,
+        "TOTAL": 39,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 5,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 6,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2021": {
+        "RUMAH TANGGA": 29,
+        "TOTAL": 44,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 7,
+        "SEKOLAH": 2,
+        "FASILITAS UMUM": 5,
+        "LEMBAGA PENDIDIKAN KILAT": 1
+      },
+      "2022": {
+        "RUMAH TANGGA": 29,
+        "TOTAL": 87,
+        "TEMPAT KERJA": 1,
+        "LAINNYA": 5,
+        "SEKOLAH": 1,
+        "FASILITAS UMUM": 51,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2023": {
+        "RUMAH TANGGA": 81,
+        "TOTAL": 109,
+        "TEMPAT KERJA": 3,
+        "LAINNYA": 3,
+        "SEKOLAH": 8,
+        "FASILITAS UMUM": 14,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      }
+    }
+  },
+  {
+    "kabupaten": "KABUPATEN MAJALENGKA",
+    "lat": -6.8361,
+    "lng": 108.2273,
+    "data": {
+      "2018": {
+        "RUMAH TANGGA": 7,
+        "TOTAL": 16,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 4,
+        "SEKOLAH": 3,
+        "FASILITAS UMUM": 2,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2019": {
+        "RUMAH TANGGA": 2,
+        "TOTAL": 15,
+        "TEMPAT KEJADIAN": 0,
+        "LAINNYA": 11,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 2,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2020": {
+        "RUMAH TANGGA": 7,
+        "TOTAL": 19,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 11,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 1,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2021": {
+        "RUMAH TANGGA": 40,
+        "TOTAL": 49,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 8,
+        "SEKOLAH": 1,
+        "FASILITAS UMUM": 0,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2022": {
+        "RUMAH TANGGA": 2,
+        "TOTAL": 4,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 2,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 0,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2023": {
+        "RUMAH TANGGA": 12,
+        "TOTAL": 18,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 6,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 0,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      }
+    }
+  },
+  {
+    "kabupaten": "KABUPATEN SUMEDANG",
+    "lat": -6.8583,
+    "lng": 107.9219,
+    "data": {
+      "2018": {
+        "RUMAH TANGGA": 10,
+        "TOTAL": 29,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 16,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 3,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2019": {
+        "RUMAH TANGGA": 5,
+        "TOTAL": 15,
+        "TEMPAT KEJADIAN": 0,
+        "LAINNYA": 10,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 0,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2020": {
+        "RUMAH TANGGA": 9,
+        "TOTAL": 12,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 2,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 1,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2021": {
+        "RUMAH TANGGA": 23,
+        "TOTAL": 26,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 2,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 1,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2022": {
+        "RUMAH TANGGA": 10,
+        "TOTAL": 19,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 7,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 2,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2023": {
+        "RUMAH TANGGA": 30,
+        "TOTAL": 49,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 18,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 1,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      }
+    }
+  },
+  {
+    "kabupaten": "KABUPATEN INDRAMAYU",
+    "lat": -6.3373,
+    "lng": 108.3238,
+    "data": {
+      "2018": {
+        "RUMAH TANGGA": 7,
+        "TOTAL": 11,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 2,
+        "SEKOLAH": 1,
+        "FASILITAS UMUM": 1,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2019": {
+        "RUMAH TANGGA": 11,
+        "TOTAL": 23,
+        "TEMPAT KEJADIAN": 1,
+        "LAINNYA": 2,
+        "SEKOLAH": 2,
+        "FASILITAS UMUM": 7,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2020": {
+        "RUMAH TANGGA": 11,
+        "TOTAL": 18,
+        "TEMPAT KERJA": 1,
+        "LAINNYA": 6,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 0,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2021": {
+        "RUMAH TANGGA": 11,
+        "TOTAL": 22,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 7,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 3,
+        "LEMBAGA PENDIDIKAN KILAT": 1
+      },
+      "2022": {
+        "RUMAH TANGGA": 17,
+        "TOTAL": 35,
+        "TEMPAT KERJA": 3,
+        "LAINNYA": 14,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 1,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2023": {
+        "RUMAH TANGGA": 44,
+        "TOTAL": 75,
+        "TEMPAT KERJA": 3,
+        "LAINNYA": 9,
+        "SEKOLAH": 1,
+        "FASILITAS UMUM": 18,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      }
+    }
+  },
+  {
+    "kabupaten": "KABUPATEN SUBANG",
+    "lat": -6.5709,
+    "lng": 107.7603,
+    "data": {
+      "2018": {
+        "RUMAH TANGGA": 28,
+        "TOTAL": 47,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 11,
+        "SEKOLAH": 1,
+        "FASILITAS UMUM": 7,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2019": {
+        "RUMAH TANGGA": 43,
+        "TOTAL": 44,
+        "TEMPAT KEJADIAN": 0,
+        "LAINNYA": 1,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 0,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2020": {
+        "RUMAH TANGGA": 12,
+        "TOTAL": 19,
+        "TEMPAT KERJA": 1,
+        "LAINNYA": 3,
+        "SEKOLAH": 1,
+        "FASILITAS UMUM": 2,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2021": {
+        "RUMAH TANGGA": 10,
+        "TOTAL": 11,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 1,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 0,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2022": {
+        "RUMAH TANGGA": 7,
+        "TOTAL": 12,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 5,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 0,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2023": {
+        "RUMAH TANGGA": 66,
+        "TOTAL": 102,
+        "TEMPAT KERJA": 2,
+        "LAINNYA": 20,
+        "SEKOLAH": 4,
+        "FASILITAS UMUM": 10,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      }
+    }
+  },
+  {
+    "kabupaten": "KABUPATEN PURWAKARTA",
+    "lat": -6.5569,
+    "lng": 107.4436,
+    "data": {
+      "2018": {
+        "RUMAH TANGGA": 10,
+        "TOTAL": 18,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 5,
+        "SEKOLAH": 2,
+        "FASILITAS UMUM": 1,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2019": {
+        "RUMAH TANGGA": 24,
+        "TOTAL": 34,
+        "TEMPAT KEJADIAN": 0,
+        "LAINNYA": 8,
+        "SEKOLAH": 1,
+        "FASILITAS UMUM": 1,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2020": {
+        "RUMAH TANGGA": 22,
+        "TOTAL": 40,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 3,
+        "SEKOLAH": 1,
+        "FASILITAS UMUM": 14,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2021": {
+        "RUMAH TANGGA": 7,
+        "TOTAL": 12,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 2,
+        "SEKOLAH": 3,
+        "FASILITAS UMUM": 0,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2022": {
+        "RUMAH TANGGA": 39,
+        "TOTAL": 53,
+        "TEMPAT KERJA": 4,
+        "LAINNYA": 4,
+        "SEKOLAH": 3,
+        "FASILITAS UMUM": 3,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2023": {
+        "RUMAH TANGGA": 20,
+        "TOTAL": 34,
+        "TEMPAT KERJA": 1,
+        "LAINNYA": 5,
+        "SEKOLAH": 2,
+        "FASILITAS UMUM": 6,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      }
+    }
+  },
+  {
+    "kabupaten": "KABUPATEN KARAWANG",
+    "lat": -6.3227,
+    "lng": 107.3376,
+    "data": {
+      "2018": {
+        "RUMAH TANGGA": 23,
+        "TOTAL": 36,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 11,
+        "SEKOLAH": 1,
+        "FASILITAS UMUM": 1,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2019": {
+        "RUMAH TANGGA": 2,
+        "TOTAL": 3,
+        "TEMPAT KEJADIAN": 0,
+        "LAINNYA": 0,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 1,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2020": {
+        "RUMAH TANGGA": 22,
+        "TOTAL": 41,
+        "TEMPAT KERJA": 1,
+        "LAINNYA": 17,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 1,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2021": {
+        "RUMAH TANGGA": 3,
+        "TOTAL": 9,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 4,
+        "SEKOLAH": 1,
+        "FASILITAS UMUM": 1,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2022": {
+        "RUMAH TANGGA": 49,
+        "TOTAL": 111,
+        "TEMPAT KERJA": 1,
+        "LAINNYA": 56,
+        "SEKOLAH": 4,
+        "FASILITAS UMUM": 1,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2023": {
+        "RUMAH TANGGA": 62,
+        "TOTAL": 129,
+        "TEMPAT KERJA": 5,
+        "LAINNYA": 39,
+        "SEKOLAH": 20,
+        "FASILITAS UMUM": 3,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      }
+    }
+  },
+  {
+    "kabupaten": "KABUPATEN BEKASI",
+    "lat": -6.2383,
+    "lng": 107.1608,
+    "data": {
+      "2018": {
+        "RUMAH TANGGA": 29,
+        "TOTAL": 65,
+        "TEMPAT KERJA": 2,
+        "LAINNYA": 27,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 7,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2019": {
+        "RUMAH TANGGA": 4,
+        "TOTAL": 7,
+        "TEMPAT KEJADIAN": 0,
+        "LAINNYA": 1,
+        "SEKOLAH": 1,
+        "FASILITAS UMUM": 1,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2020": {
+        "RUMAH TANGGA": 22,
+        "TOTAL": 31,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 5,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 4,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2021": {
+        "RUMAH TANGGA": 80,
+        "TOTAL": 118,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 18,
+        "SEKOLAH": 6,
+        "FASILITAS UMUM": 14,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2022": {
+        "RUMAH TANGGA": 150,
+        "TOTAL": 175,
+        "TEMPAT KERJA": 1,
+        "LAINNYA": 11,
+        "SEKOLAH": 5,
+        "FASILITAS UMUM": 8,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2023": {
+        "RUMAH TANGGA": 184,
+        "TOTAL": 350,
+        "TEMPAT KERJA": 4,
+        "LAINNYA": 129,
+        "SEKOLAH": 21,
+        "FASILITAS UMUM": 6,
+        "LEMBAGA PENDIDIKAN KILAT": 6
+      }
+    }
+  },
+  {
+    "kabupaten": "KABUPATEN BANDUNG BARAT",
+    "lat": -6.8358,
+    "lng": 107.4877,
+    "data": {
+      "2018": {
+        "RUMAH TANGGA": 15,
+        "TOTAL": 16,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 0,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 1,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2019": {
+        "RUMAH TANGGA": 14,
+        "TOTAL": 19,
+        "TEMPAT KEJADIAN": 0,
+        "LAINNYA": 4,
+        "SEKOLAH": 1,
+        "FASILITAS UMUM": 0,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2020": {
+        "RUMAH TANGGA": 9,
+        "TOTAL": 23,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 13,
+        "SEKOLAH": 1,
+        "FASILITAS UMUM": 0,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2021": {
+        "RUMAH TANGGA": 12,
+        "TOTAL": 36,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 21,
+        "SEKOLAH": 3,
+        "FASILITAS UMUM": 0,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2022": {
+        "RUMAH TANGGA": 38,
+        "TOTAL": 44,
+        "TEMPAT KERJA": 1,
+        "LAINNYA": 4,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 1,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2023": {
+        "RUMAH TANGGA": 54,
+        "TOTAL": 60,
+        "TEMPAT KERJA": 2,
+        "LAINNYA": 4,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 0,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      }
+    }
+  },
+  {
+    "kabupaten": "KABUPATEN PANGANDARAN",
+    "lat": -7.6772,
+    "lng": 108.6532,
+    "data": {
+      "2018": {
+        "RUMAH TANGGA": 2,
+        "TOTAL": 7,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 5,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 0,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2019": {
+        "RUMAH TANGGA": 3,
+        "TOTAL": 7,
+        "TEMPAT KEJADIAN": 0,
+        "LAINNYA": 2,
+        "SEKOLAH": 1,
+        "FASILITAS UMUM": 1,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2020": {
+        "RUMAH TANGGA": 3,
+        "TOTAL": 29,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 23,
+        "SEKOLAH": 1,
+        "FASILITAS UMUM": 2,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2021": {
+        "RUMAH TANGGA": 13,
+        "TOTAL": 26,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 11,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 2,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2022": {
+        "RUMAH TANGGA": 8,
+        "TOTAL": 21,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 12,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 1,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2023": {
+        "RUMAH TANGGA": 17,
+        "TOTAL": 33,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 15,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 1,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      }
+    }
+  },
+  {
+    "kabupaten": "KOTA BOGOR",
+    "lat": -6.595,
+    "lng": 106.8166,
+    "data": {
+      "2018": {
+        "RUMAH TANGGA": 25,
+        "TOTAL": 37,
+        "TEMPAT KERJA": 1,
+        "LAINNYA": 3,
+        "SEKOLAH": 2,
+        "FASILITAS UMUM": 6,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2019": {
+        "RUMAH TANGGA": 8,
+        "TOTAL": 11,
+        "TEMPAT KEJADIAN": 0,
+        "LAINNYA": 1,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 2,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2020": {
+        "RUMAH TANGGA": 3,
+        "TOTAL": 10,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 6,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 1,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2021": {
+        "RUMAH TANGGA": 7,
+        "TOTAL": 18,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 8,
+        "SEKOLAH": 1,
+        "FASILITAS UMUM": 2,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2022": {
+        "RUMAH TANGGA": 68,
+        "TOTAL": 109,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 29,
+        "SEKOLAH": 4,
+        "FASILITAS UMUM": 8,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2023": {
+        "RUMAH TANGGA": 58,
+        "TOTAL": 110,
+        "TEMPAT KERJA": 1,
+        "LAINNYA": 24,
+        "SEKOLAH": 4,
+        "FASILITAS UMUM": 23,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      }
+    }
+  },
+  {
+    "kabupaten": "KOTA SUKABUMI",
+    "lat": -6.9277,
+    "lng": 106.93,
+    "data": {
+      "2018": {
+        "RUMAH TANGGA": 12,
+        "TOTAL": 29,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 17,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 0,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2019": {
+        "RUMAH TANGGA": 5,
+        "TOTAL": 8,
+        "TEMPAT KEJADIAN": 1,
+        "LAINNYA": 1,
+        "SEKOLAH": 1,
+        "FASILITAS UMUM": 0,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2020": {
+        "RUMAH TANGGA": 32,
+        "TOTAL": 44,
+        "TEMPAT KERJA": 4,
+        "LAINNYA": 8,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 0,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2021": {
+        "RUMAH TANGGA": 23,
+        "TOTAL": 61,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 22,
+        "SEKOLAH": 3,
+        "FASILITAS UMUM": 13,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2022": {
+        "RUMAH TANGGA": 27,
+        "TOTAL": 43,
+        "TEMPAT KERJA": 1,
+        "LAINNYA": 6,
+        "SEKOLAH": 8,
+        "FASILITAS UMUM": 0,
+        "LEMBAGA PENDIDIKAN KILAT": 1
+      },
+      "2023": {
+        "RUMAH TANGGA": 55,
+        "TOTAL": 103,
+        "TEMPAT KERJA": 2,
+        "LAINNYA": 18,
+        "SEKOLAH": 20,
+        "FASILITAS UMUM": 8,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      }
+    }
+  },
+  {
+    "kabupaten": "KOTA BANDUNG",
+    "lat": -6.9175,
+    "lng": 107.6191,
+    "data": {
+      "2018": {
+        "RUMAH TANGGA": 51,
+        "TOTAL": 65,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 12,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 2,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2019": {
+        "RUMAH TANGGA": 156,
+        "TOTAL": 242,
+        "TEMPAT KEJADIAN": 0,
+        "LAINNYA": 72,
+        "SEKOLAH": 8,
+        "FASILITAS UMUM": 6,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2020": {
+        "RUMAH TANGGA": 108,
+        "TOTAL": 190,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 67,
+        "SEKOLAH": 3,
+        "FASILITAS UMUM": 12,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2021": {
+        "RUMAH TANGGA": 3,
+        "TOTAL": 5,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 2,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 0,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2022": {
+        "RUMAH TANGGA": 227,
+        "TOTAL": 389,
+        "TEMPAT KERJA": 6,
+        "LAINNYA": 116,
+        "SEKOLAH": 13,
+        "FASILITAS UMUM": 27,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2023": {
+        "RUMAH TANGGA": 231,
+        "TOTAL": 454,
+        "TEMPAT KERJA": 3,
+        "LAINNYA": 166,
+        "SEKOLAH": 22,
+        "FASILITAS UMUM": 32,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      }
+    }
+  },
+  {
+    "kabupaten": "KOTA CIREBON",
+    "lat": -6.7063,
+    "lng": 108.557,
+    "data": {
+      "2018": {
+        "RUMAH TANGGA": 13,
+        "TOTAL": 17,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 2,
+        "SEKOLAH": 1,
+        "FASILITAS UMUM": 1,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2019": {
+        "RUMAH TANGGA": 4,
+        "TOTAL": 5,
+        "TEMPAT KEJADIAN": 0,
+        "LAINNYA": 1,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 0,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2020": {
+        "RUMAH TANGGA": 25,
+        "TOTAL": 29,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 1,
+        "SEKOLAH": 2,
+        "FASILITAS UMUM": 1,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2021": {
+        "RUMAH TANGGA": 9,
+        "TOTAL": 88,
+        "TEMPAT KERJA": 1,
+        "LAINNYA": 75,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 3,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2022": {
+        "RUMAH TANGGA": 2,
+        "TOTAL": 2,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 0,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 0,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2023": {
+        "RUMAH TANGGA": 14,
+        "TOTAL": 14,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 0,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 0,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      }
+    }
+  },
+  {
+    "kabupaten": "KOTA BEKASI",
+    "lat": -6.2349,
+    "lng": 106.9896,
+    "data": {
+      "2018": {
+        "RUMAH TANGGA": 6,
+        "TOTAL": 8,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 2,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 0,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2019": {
+        "RUMAH TANGGA": 1,
+        "TOTAL": 2,
+        "TEMPAT KEJADIAN": 0,
+        "LAINNYA": 1,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 0,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2020": {
+        "RUMAH TANGGA": 133,
+        "TOTAL": 145,
+        "TEMPAT KERJA": 1,
+        "LAINNYA": 8,
+        "SEKOLAH": 2,
+        "FASILITAS UMUM": 0,
+        "LEMBAGA PENDIDIKAN KILAT": 1
+      },
+      "2021": {
+        "RUMAH TANGGA": 0,
+        "TOTAL": 35,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 30,
+        "SEKOLAH": 1,
+        "FASILITAS UMUM": 4,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2022": {
+        "RUMAH TANGGA": 3,
+        "TOTAL": 5,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 1,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 1,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2023": {
+        "RUMAH TANGGA": 0,
+        "TOTAL": 0,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 0,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 0,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      }
+    }
+  },
+  {
+    "kabupaten": "KOTA DEPOK",
+    "lat": -6.4025,
+    "lng": 106.7942,
+    "data": {
+      "2018": {
+        "RUMAH TANGGA": 40,
+        "TOTAL": 100,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 55,
+        "SEKOLAH": 5,
+        "FASILITAS UMUM": 0,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2019": {
+        "RUMAH TANGGA": 23,
+        "TOTAL": 30,
+        "TEMPAT KEJADIAN": 0,
+        "LAINNYA": 7,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 0,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2020": {
+        "RUMAH TANGGA": 41,
+        "TOTAL": 64,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 11,
+        "SEKOLAH": 2,
+        "FASILITAS UMUM": 10,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2021": {
+        "RUMAH TANGGA": 2,
+        "TOTAL": 13,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 8,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 3,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2022": {
+        "RUMAH TANGGA": 147,
+        "TOTAL": 240,
+        "TEMPAT KERJA": 5,
+        "LAINNYA": 76,
+        "SEKOLAH": 10,
+        "FASILITAS UMUM": 2,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2023": {
+        "RUMAH TANGGA": 130,
+        "TOTAL": 205,
+        "TEMPAT KERJA": 2,
+        "LAINNYA": 58,
+        "SEKOLAH": 12,
+        "FASILITAS UMUM": 3,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      }
+    }
+  },
+  {
+    "kabupaten": "KOTA CIMAHI",
+    "lat": -6.8841,
+    "lng": 107.5413,
+    "data": {
+      "2018": {
+        "RUMAH TANGGA": 9,
+        "TOTAL": 17,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 2,
+        "SEKOLAH": 2,
+        "FASILITAS UMUM": 4,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2019": {
+        "RUMAH TANGGA": 6,
+        "TOTAL": 12,
+        "TEMPAT KEJADIAN": 0,
+        "LAINNYA": 5,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 1,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2020": {
+        "RUMAH TANGGA": 11,
+        "TOTAL": 22,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 6,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 5,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2021": {
+        "RUMAH TANGGA": 5,
+        "TOTAL": 10,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 2,
+        "SEKOLAH": 3,
+        "FASILITAS UMUM": 0,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2022": {
+        "RUMAH TANGGA": 25,
+        "TOTAL": 37,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 8,
+        "SEKOLAH": 3,
+        "FASILITAS UMUM": 1,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2023": {
+        "RUMAH TANGGA": 37,
+        "TOTAL": 65,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 19,
+        "SEKOLAH": 6,
+        "FASILITAS UMUM": 3,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      }
+    }
+  },
+  {
+    "kabupaten": "KOTA TASIKMALAYA",
+    "lat": -7.3274,
+    "lng": 108.2207,
+    "data": {
+      "2018": {
+        "RUMAH TANGGA": 5,
+        "TOTAL": 12,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 2,
+        "SEKOLAH": 3,
+        "FASILITAS UMUM": 2,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2019": {
+        "RUMAH TANGGA": 3,
+        "TOTAL": 5,
+        "TEMPAT KEJADIAN": 1,
+        "LAINNYA": 0,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 1,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2020": {
+        "RUMAH TANGGA": 9,
+        "TOTAL": 18,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 3,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 6,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2021": {
+        "RUMAH TANGGA": 54,
+        "TOTAL": 126,
+        "TEMPAT KERJA": 1,
+        "LAINNYA": 49,
+        "SEKOLAH": 7,
+        "FASILITAS UMUM": 15,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2022": {
+        "RUMAH TANGGA": 3,
+        "TOTAL": 8,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 1,
+        "SEKOLAH": 2,
+        "FASILITAS UMUM": 2,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2023": {
+        "RUMAH TANGGA": 3,
+        "TOTAL": 8,
+        "TEMPAT KERJA": 1,
+        "LAINNYA": 4,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 0,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      }
+    }
+  },
+  {
+    "kabupaten": "KOTA BANJAR",
+    "lat": -7.3673,
+    "lng": 108.534,
+    "data": {
+      "2018": {
+        "RUMAH TANGGA": 1,
+        "TOTAL": 12,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 10,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 1,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2019": {
+        "RUMAH TANGGA": 1,
+        "TOTAL": 1,
+        "TEMPAT KEJADIAN": 0,
+        "LAINNYA": 0,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 0,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2020": {
+        "RUMAH TANGGA": 6,
+        "TOTAL": 18,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 12,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 0,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2021": {
+        "RUMAH TANGGA": 0,
+        "TOTAL": 17,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 15,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 2,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2022": {
+        "RUMAH TANGGA": 1,
+        "TOTAL": 1,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 0,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 0,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      },
+      "2023": {
+        "RUMAH TANGGA": 1,
+        "TOTAL": 5,
+        "TEMPAT KERJA": 0,
+        "LAINNYA": 4,
+        "SEKOLAH": 0,
+        "FASILITAS UMUM": 0,
+        "LEMBAGA PENDIDIKAN KILAT": 0
+      }
+    }
+  }
+]

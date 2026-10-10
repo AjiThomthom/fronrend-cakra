@@ -1,0 +1,58 @@
+export const historyData = [
+  {
+    id: 1,
+    cameraName: "Depan NGOPIBAH",
+    incidentDate: "22 Maret 2026",
+    incidentTime: "14:00 WIB",
+    thumbnail: "",
+  },
+  {
+    id: 2,
+    cameraName: "Parkiran Gedung A",
+    incidentDate: "22 Maret 2026",
+    incidentTime: "14:18 WIB",
+    thumbnail: "",
+  },
+  {
+    id: 3,
+    cameraName: "Lobby Utama",
+    incidentDate: "22 Maret 2026",
+    incidentTime: "15:02 WIB",
+    thumbnail: "",
+  },
+  {
+    id: 4,
+    cameraName: "Koridor Lantai 2",
+    incidentDate: "22 Maret 2026",
+    incidentTime: "15:27 WIB",
+    thumbnail: "",
+  },
+  {
+    id: 5,
+    cameraName: "Pintu Belakang",
+    incidentDate: "22 Maret 2026",
+    incidentTime: "16:10 WIB",
+    thumbnail: "",
+  },
+  {
+    id: 6,
+    cameraName: "Gerbang Timur",
+    incidentDate: "23 Maret 2026",
+    incidentTime: "08:15 WIB",
+    thumbnail: "",
+  },
+  {
+    id: 7,
+    cameraName: "Area Kantin",
+    incidentDate: "23 Maret 2026",
+    incidentTime: "10:42 WIB",
+    thumbnail: "",
+  },
+  {
+    id: 8,
+    cameraName: "Lapangan Parkir",
+    incidentDate: "23 Maret 2026",
+    incidentTime: "12:33 WIB",
+    thumbnail: "",
+  },
+];
