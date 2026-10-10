@@ -10,80 +10,83 @@ import { Container } from "@mui/material";
 import { motion, Variants } from "framer-motion";
 
 export default function PublicWelcomeFeature() {
-  // Ditambahkan tipe Variants dan 'as const' pada array bezier
   const sectionVariants: Variants = {
-    hidden: { opacity: 0, y: 40 },
-    visible: { 
-      opacity: 1, 
-      y: 0, 
-      transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] as const } 
+    hidden: { opacity: 0, y: 35 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] as const },
     },
   };
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 transition-colors duration-300 dark:bg-slate-950 dark:text-slate-100">
-      <Container maxWidth="xl" className="space-y-24 py-8 md:py-16">
-        
+      <Container maxWidth="xl" className="space-y-16 py-8 md:py-12">
         {/* HERO SECTION */}
-        <motion.section 
-          initial="hidden" 
-          whileInView="visible" 
-          viewport={{ once: true, margin: "-50px" }} 
+        <motion.section
+          id="hero-section"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-50px" }}
           variants={sectionVariants}
         >
           <HeroSection />
         </motion.section>
 
         {/* CREDIT SECTION */}
-        <motion.section 
-          initial="hidden" 
-          whileInView="visible" 
-          viewport={{ once: true, margin: "-50px" }} 
+        <motion.section
+          id="credit-section"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-50px" }}
           variants={sectionVariants}
         >
           <CreditSection />
         </motion.section>
 
         {/* WHATS ON SECTION */}
-        <motion.section 
-          initial="hidden" 
-          whileInView="visible" 
-          viewport={{ once: true, margin: "-50px" }} 
+        <motion.section
+          id="whatson-section"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-50px" }}
           variants={sectionVariants}
         >
           <WhatsOnSection />
         </motion.section>
 
         {/* FAQ SECTION */}
-        <motion.section 
-          initial="hidden" 
-          whileInView="visible" 
-          viewport={{ once: true, margin: "-50px" }} 
+        <motion.section
+          id="faq-section"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-50px" }}
           variants={sectionVariants}
         >
           <FaQSection />
         </motion.section>
 
         {/* REGISTER SECTION */}
-        <motion.section 
-          initial="hidden" 
-          whileInView="visible" 
-          viewport={{ once: true, margin: "-50px" }} 
+        <motion.section
+          id="register-section"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-50px" }}
           variants={sectionVariants}
         >
           <RegisterSection />
         </motion.section>
 
         {/* FOOTER SECTION */}
-        <motion.section 
-          initial="hidden" 
-          whileInView="visible" 
-          viewport={{ once: true, margin: "-50px" }} 
+        <motion.section
+          id="footer-section"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-50px" }}
           variants={sectionVariants}
         >
           <FooterSection />
         </motion.section>
-
       </Container>
     </div>
   );

@@ -1,32 +1,24 @@
-import {
-  Avatar,
-  Box,
-  Button,
-  Divider,
-  TextField,
-  Typography,
-} from "@mui/material";
+"use client";
+
 import AccountForm from "../s.form/form-account";
-import { getMyAccounts } from "@/services/accounts.service";
-import { ChangeEvent, useEffect, useRef, useState } from "react";
-import {
-  ModeAccountContextProvider,
-  useModeAccount,
-} from "../s.hooks/account.hooks";
-import axios from "axios";
-import { BASE_URL } from "@/services/maps.service";
+import { UserCheck } from "lucide-react";
 
 export const AccountComponents = () => {
   return (
-    <Box>
-      <Typography variant="h6" className="font-bold mb-4">
-        Pengaturan Akun Saya
-      </Typography>
-      <Typography variant="body2" className="text-gray-500 mb-6">
-        Kelola informasi pribadi dan keamanan akun Anda.
-      </Typography>
+    <div className="space-y-6">
+      <div>
+        <div className="flex items-center gap-2">
+          <UserCheck className="h-5 w-5 text-emerald-500" />
+          <h1 className="text-lg font-black text-slate-900 dark:text-white">
+            Pengaturan Akun Saya
+          </h1>
+        </div>
+        <p className="mt-1 text-xs font-medium text-slate-500 dark:text-slate-400">
+          Kelola informasi pribadi dan kredensial keamanan akun Anda
+        </p>
+      </div>
 
       <AccountForm />
-    </Box>
+    </div>
   );
 };

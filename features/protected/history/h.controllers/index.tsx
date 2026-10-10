@@ -1,23 +1,15 @@
 "use client";
 
 import { KeyboardEvent, useState } from "react";
-import {
-  Box,
-  Container,
-  TextField,
-  MenuItem,
-  Paper,
-  Typography,
-  Grid,
-} from "@mui/material";
-import { useParams, useRouter, useSearchParams } from "next/navigation";
+import { useParams } from "next/navigation";
 import { useHistoryContext } from "../h.hooks";
-import { getAllHistory, getSearchHistory } from "@/services/history.service";
+import { getSearchHistory } from "@/services/history.service";
+import { Search, Calendar, Filter, History as HistoryIcon, Clock, AlertTriangle } from "lucide-react";
 
 interface HistoryStats {
   total: number;
   pending: number;
-  accuracy: number; // dalam persen, misal 92
+  accuracy: number;
 }
 
 interface HistoryControllersProps {
@@ -40,29 +32,7 @@ const statusOptions = [
   { value: "rejected", label: "Ditandai salah" },
 ];
 
-function StatCard({
-  label,
-  value,
-  color,
-}: {
-  label?: string;
-  value?: string | number;
-  color?: string;
-}) {
-  return (
-    <Paper elevation={0} className="p-4 bg-gray-50">
-      <Typography variant="body2" className="text-gray-500 mb-1">
-        {label}
-      </Typography>
-      <Typography variant="h5" style={{ color, fontWeight: 500 }}>
-        {value}
-      </Typography>
-    </Paper>
-  );
-}
-
 export default function HistoryControllers({
-  stats,
   onSearchChange,
   onDateFilterChange,
   onStatusFilterChange,
@@ -78,10 +48,10 @@ export default function HistoryControllers({
   } = useHistoryContext();
   const param = useParams();
 
-  async function handleSearchChange(value: KeyboardEvent<HTMLInputElement>) {
-    if (value.key != "Enter") return null;
+  async function handleSearchChange(e: KeyboardEvent<HTMLInputElement>) {
+    if (e.key !== "Enter") return;
 
-    if (search == "") {
+    if (search.trim() === "") {
       return window.location.reload();
     }
 
@@ -90,69 +60,109 @@ export default function HistoryControllers({
     onSearchChange?.(search);
   }
 
-  async function handleDateFilterChange(value: string) {
+  function handleDateFilterChange(value: string) {
     setDateIncident(value);
     onDateFilterChange?.(value);
   }
 
-  async function handleStatusFilterChange(value: string) {
+  function handleStatusFilterChange(value: string) {
     setStatus(value);
     onStatusFilterChange?.(value);
   }
 
   return (
-    <Container className="my-4">
-      <Box className="flex flex-wrap gap-3 mb-4">
-        <TextField
-          size="small"
-          autoComplete="off"
-          autoCorrect="off"
-          placeholder="Cari nama kamera"
-          value={search}
-          onKeyDown={handleSearchChange}
-          onChange={(e) => setSearch(e.target.value)}
-          className="flex-1 min-w-[200px]"
-        />
-        <TextField
-          size="small"
-          select
-          value={dateIncident}
-          onChange={(e) => handleDateFilterChange(e.target.value)}
-          className="w-[160px]"
-        >
-          {dateOptions.map((opt) => (
-            <MenuItem key={opt.value} value={opt.value}>
-              {opt.label}
-            </MenuItem>
-          ))}
-        </TextField>
-        <TextField
-          size="small"
-          select
-          value={status}
-          onChange={(e) => handleStatusFilterChange(e.target.value)}
-          className="w-[180px]"
-        >
-          {statusOptions.map((opt) => (
-            <MenuItem key={opt.value} value={opt.value}>
-              {opt.label}
-            </MenuItem>
-          ))}
-        </TextField>
-      </Box>
+    <div className="space-y-6">
+      {/* HEADER TITLE */}
+      <div>
+        <div className="flex items-center gap-2">
+          <HistoryIcon className="h-5 w-5 text-emerald-500" />
+          <h1 className="text-xl font-black text-slate-900 sm:text-2xl dark:text-white">
+            Riwayat Deteksi AI
+          </h1>
+        </div>
+        <p className="mt-1 text-xs font-medium text-slate-500 dark:text-slate-400">
+          Pantau dan konfirmasi seluruh log insiden terdeteksi oleh sistem kamera
+        </p>
+      </div>
 
-      <Grid container spacing={2}>
-        <Grid size={{ xs: 12, sm: 4 }}>
-          <StatCard label="Total kejadian" value={history?.meta.total} />
-        </Grid>
-        <Grid size={{ xs: 12, sm: 4 }}>
-          <StatCard
-            label="Belum ditinjau"
-            value={history?.meta.pending}
-            color="#B45309"
+      {/* STATS CARDS */}
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="flex items-center gap-4 rounded-2xl border border-slate-200/80 bg-white p-4 shadow-xs dark:border-slate-800 dark:bg-slate-900">
+          <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-blue-500/15 text-blue-600 dark:text-blue-400">
+            <Clock className="h-5 w-5" />
+          </div>
+          <div>
+            <p className="text-[10px] font-bold uppercase tracking-wider text-slate-400">
+              Total Kejadian
+            </p>
+            <p className="text-xl font-black text-slate-900 dark:text-white">
+              {history?.meta?.total ?? 0}
+            </p>
+          </div>
+        </div>
+
+        <div className="flex items-center gap-4 rounded-2xl border border-amber-500/30 bg-amber-500/10 p-4 shadow-xs dark:bg-amber-500/10">
+          <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-amber-500/20 text-amber-600 dark:text-amber-400">
+            <AlertTriangle className="h-5 w-5" />
+          </div>
+          <div>
+            <p className="text-[10px] font-bold uppercase tracking-wider text-amber-700 dark:text-amber-400">
+              Belum Ditinjau
+            </p>
+            <p className="text-xl font-black text-amber-700 dark:text-amber-400">
+              {history?.meta?.pending ?? 0}
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* SEARCH & FILTERS BAR */}
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
+        {/* INPUT PENCARIAN NAMA KAMERA */}
+        <div className="relative flex flex-1 items-center">
+          <Search className="absolute left-3.5 h-4 w-4 text-slate-400" />
+          <input
+            type="text"
+            placeholder="Cari nama kamera... (Tekan Enter)"
+            value={search}
+            onKeyDown={handleSearchChange}
+            onChange={(e) => setSearch(e.target.value)}
+            className="w-full rounded-2xl border border-slate-200 bg-white py-2.5 pl-10 pr-4 text-xs font-medium text-slate-900 placeholder:text-slate-400 outline-none transition-all focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 dark:border-slate-800 dark:bg-slate-900 dark:text-white dark:placeholder:text-slate-500 dark:focus:border-emerald-500"
           />
-        </Grid>
-      </Grid>
-    </Container>
+        </div>
+
+        {/* FILTER TANGGAL */}
+        <div className="relative flex w-full items-center sm:w-44">
+          <Calendar className="absolute left-3.5 h-4 w-4 pointer-events-none text-emerald-500" />
+          <select
+            value={dateIncident}
+            onChange={(e) => handleDateFilterChange(e.target.value)}
+            className="w-full appearance-none rounded-2xl border border-slate-200 bg-white py-2.5 pl-10 pr-8 text-xs font-bold text-slate-800 outline-none transition-all focus:border-emerald-500 dark:border-slate-800 dark:bg-slate-900 dark:text-slate-200 cursor-pointer"
+          >
+            {dateOptions.map((opt) => (
+              <option key={opt.value} value={opt.value} className="dark:bg-slate-900">
+                {opt.label}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        {/* FILTER STATUS */}
+        <div className="relative flex w-full items-center sm:w-48">
+          <Filter className="absolute left-3.5 h-4 w-4 pointer-events-none text-emerald-500" />
+          <select
+            value={status}
+            onChange={(e) => handleStatusFilterChange(e.target.value)}
+            className="w-full appearance-none rounded-2xl border border-slate-200 bg-white py-2.5 pl-10 pr-8 text-xs font-bold text-slate-800 outline-none transition-all focus:border-emerald-500 dark:border-slate-800 dark:bg-slate-900 dark:text-slate-200 cursor-pointer"
+          >
+            {statusOptions.map((opt) => (
+              <option key={opt.value} value={opt.value} className="dark:bg-slate-900">
+                {opt.label}
+              </option>
+            ))}
+          </select>
+        </div>
+      </div>
+    </div>
   );
 }

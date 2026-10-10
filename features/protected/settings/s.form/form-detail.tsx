@@ -1,7 +1,7 @@
 "use client";
+
 import { CurrentAgency, updateAgency } from "@/services/agency.service";
-import { Box, Button, TextField } from "@mui/material";
-import { Edit2Icon } from "lucide-react";
+import { Edit3, Save, RotateCcw } from "lucide-react";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useDetailAgencyForm } from "./hooks";
@@ -10,17 +10,18 @@ import { useTokenJWT } from "@/context/user.context";
 export function DetailAgencyForm() {
   const [mode, setMode] = useState<string>("read");
   const params = useParams();
+
   const {
     reset,
-    formState: error,
+    formState: { errors },
     handleSubmit,
     register,
   } = useDetailAgencyForm();
+
   const user = useTokenJWT();
 
   const getDetailAgency = async () => {
     const response = await CurrentAgency(params.slugs as string);
-    console.log(response);
     if (!response) return null;
 
     const payload = {
@@ -40,147 +41,132 @@ export function DetailAgencyForm() {
   const submitDetail = async (data: any) => {
     const response = await updateAgency(params.slugs as string, data);
     if (!response) return null;
-
     setMode("read");
   };
 
   if (!user) return null;
+
   return (
-    <form
-      onSubmit={handleSubmit(submitDetail)}
-      className="flex flex-col gap-y-3"
-    >
-      <div>
-        <TextField
+    <form onSubmit={handleSubmit(submitDetail)} className="space-y-4 max-w-2xl">
+      <div className="space-y-1.5">
+        <label className="text-xs font-bold text-slate-700 dark:text-slate-200">
+          Nama Lembaga / Instansi
+        </label>
+        <input
           {...register("agency_name")}
-          label="Nama Lembaga"
-          variant="outlined"
-          fullWidth
-          slotProps={{ inputLabel: { shrink: true } }}
-          size="small"
-          disabled={mode == "read"}
-          color="success"
+          disabled={mode === "read"}
+          type="text"
+          className="w-full rounded-xl border border-slate-300 bg-slate-50 py-2.5 px-3.5 text-xs font-medium text-slate-900 outline-none transition-all focus:border-emerald-500 focus:bg-white focus:ring-2 focus:ring-emerald-500/20 disabled:opacity-60 dark:border-slate-700 dark:bg-slate-800 dark:text-white dark:focus:border-emerald-500"
         />
-        {error && (
-          <p className="text-[12px] text-red-500">
-            {error.errors.agency_name?.message}
+        {errors?.agency_name && (
+          <p className="text-[11px] font-medium text-rose-500">
+            {errors.agency_name?.message}
           </p>
         )}
       </div>
-      <div>
-        <TextField
+
+      <div className="space-y-1.5">
+        <label className="text-xs font-bold text-slate-700 dark:text-slate-200">
+          Email Resmi Lembaga
+        </label>
+        <input
           {...register("agency_email_pic")}
-          label="Email Lembaga"
+          disabled={mode === "read"}
           type="email"
-          slotProps={{ inputLabel: { shrink: true } }}
-          color="success"
-          size="small"
-          disabled={mode == "read"}
-          variant="outlined"
-          fullWidth
+          className="w-full rounded-xl border border-slate-300 bg-slate-50 py-2.5 px-3.5 text-xs font-medium text-slate-900 outline-none transition-all focus:border-emerald-500 focus:bg-white focus:ring-2 focus:ring-emerald-500/20 disabled:opacity-60 dark:border-slate-700 dark:bg-slate-800 dark:text-white dark:focus:border-emerald-500"
         />
-        {error && (
-          <p className="text-[12px] text-red-500">
-            {error.errors.agency_name?.message}
+        {errors?.agency_email_pic && (
+          <p className="text-[11px] font-medium text-rose-500">
+            {errors.agency_email_pic?.message}
           </p>
         )}
       </div>
-      <div>
-        <TextField
+
+      <div className="space-y-1.5">
+        <label className="text-xs font-bold text-slate-700 dark:text-slate-200">
+          Nomor Telepon
+        </label>
+        <input
           {...register("agency_number_pic")}
-          label="Nomor Telepon"
-          slotProps={{ inputLabel: { shrink: true } }}
+          disabled={mode === "read"}
           type="tel"
-          color="success"
-          variant="outlined"
-          disabled={mode == "read"}
-          size="small"
-          fullWidth
+          className="w-full rounded-xl border border-slate-300 bg-slate-50 py-2.5 px-3.5 text-xs font-medium text-slate-900 outline-none transition-all focus:border-emerald-500 focus:bg-white focus:ring-2 focus:ring-emerald-500/20 disabled:opacity-60 dark:border-slate-700 dark:bg-slate-800 dark:text-white dark:focus:border-emerald-500"
         />
-
-        {error && (
-          <p className="text-[12px] text-red-500">
-            {error.errors.agency_name?.message}
+        {errors?.agency_number_pic && (
+          <p className="text-[11px] font-medium text-rose-500">
+            {errors.agency_number_pic?.message}
           </p>
         )}
       </div>
-      <div>
-        <TextField
+
+      <div className="space-y-1.5">
+        <label className="text-xs font-bold text-slate-700 dark:text-slate-200">
+          Alamat Lengkap
+        </label>
+        <textarea
           {...register("agency_address")}
-          label="Alamat Lengkap"
-          variant="outlined"
-          multiline
-          slotProps={{ inputLabel: { shrink: true } }}
-          disabled={mode == "read"}
-          size="small"
+          disabled={mode === "read"}
           rows={3}
-          fullWidth
-          color="success"
+          className="w-full rounded-xl border border-slate-300 bg-slate-50 py-2.5 px-3.5 text-xs font-medium text-slate-900 outline-none transition-all focus:border-emerald-500 focus:bg-white focus:ring-2 focus:ring-emerald-500/20 disabled:opacity-60 dark:border-slate-700 dark:bg-slate-800 dark:text-white dark:focus:border-emerald-500"
         />
-        {error && (
-          <p className="text-[12px] text-red-500">
-            {error.errors.agency_name?.message}
-          </p>
-        )}
-      </div>
-      <div>
-        <TextField
-          {...register("agency_description")}
-          label="Deskripsi Singkat"
-          variant="outlined"
-          color="success"
-          multiline
-          slotProps={{ inputLabel: { shrink: true } }}
-          rows={4}
-          size="small"
-          disabled={mode == "read"}
-          fullWidth
-        />
-        {error && (
-          <p className="text-[12px] text-red-500">
-            {error.errors.agency_name?.message}
+        {errors?.agency_address && (
+          <p className="text-[11px] font-medium text-rose-500">
+            {errors.agency_address?.message}
           </p>
         )}
       </div>
 
-      <Box className="mt-4 flex gap-3">
-        {mode == "read" ? (
-          <Button
+      <div className="space-y-1.5">
+        <label className="text-xs font-bold text-slate-700 dark:text-slate-200">
+          Deskripsi Singkat
+        </label>
+        <textarea
+          {...register("agency_description")}
+          disabled={mode === "read"}
+          rows={3}
+          className="w-full rounded-xl border border-slate-300 bg-slate-50 py-2.5 px-3.5 text-xs font-medium text-slate-900 outline-none transition-all focus:border-emerald-500 focus:bg-white focus:ring-2 focus:ring-emerald-500/20 disabled:opacity-60 dark:border-slate-700 dark:bg-slate-800 dark:text-white dark:focus:border-emerald-500"
+        />
+        {errors?.agency_description && (
+          <p className="text-[11px] font-medium text-rose-500">
+            {errors.agency_description?.message}
+          </p>
+        )}
+      </div>
+
+      <div className="pt-3">
+        {mode === "read" ? (
+          <button
             type="button"
             onClick={(e) => {
               e.preventDefault();
-              e.stopPropagation();
               setMode("edit");
             }}
-            disabled={user.role != "OWNER"}
-            variant="contained"
-            color="warning"
-            className="flex gap-x-2"
+            disabled={user.role !== "OWNER"}
+            className="flex items-center gap-2 rounded-xl bg-amber-600 px-5 py-2.5 text-xs font-bold text-white shadow-md hover:bg-amber-500 disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer"
           >
-            <Edit2Icon size={12} />
-            Edit
-          </Button>
+            <Edit3 className="h-4 w-4" />
+            <span>Edit Data Lembaga</span>
+          </button>
         ) : (
-          <>
-            <Button
-              color="success"
+          <div className="flex items-center gap-3">
+            <button
               type="submit"
-              variant="contained"
-              className="bg-emerald-600 hover:bg-emerald-700"
+              className="flex items-center gap-2 rounded-xl bg-emerald-600 px-5 py-2.5 text-xs font-bold text-white shadow-md shadow-emerald-600/20 hover:bg-emerald-500 cursor-pointer dark:bg-emerald-500 dark:text-slate-950 dark:hover:bg-emerald-400"
             >
-              Simpan Perubahan
-            </Button>
-            <Button
+              <Save className="h-4 w-4" />
+              <span>Simpan Perubahan</span>
+            </button>
+            <button
               type="button"
               onClick={() => setMode("read")}
-              variant="outlined"
-              color="inherit"
+              className="flex items-center gap-2 rounded-xl border border-slate-200 bg-slate-100 px-4 py-2.5 text-xs font-bold text-slate-700 hover:bg-slate-200 dark:border-slate-800 dark:bg-slate-800 dark:text-slate-200 cursor-pointer"
             >
-              Batal
-            </Button>
-          </>
+              <RotateCcw className="h-4 w-4" />
+              <span>Batal</span>
+            </button>
+          </div>
         )}
-      </Box>
+      </div>
     </form>
   );
 }

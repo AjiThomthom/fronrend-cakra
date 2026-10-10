@@ -1,48 +1,31 @@
-import { CameraSchema } from "@/@types/camera.type";
-import {
-  selectCameraCategory,
-  updateCameraCategory,
-} from "@/services/maps.service";
-import {
-  Badge,
-  Button,
-  Chip,
-  Container,
-  MenuItem,
-  Pagination,
-  Paper,
-  Select,
-  Table,
-  TableBody,
-  TableCell,
-  TableContainer,
-  TableHead,
-  TableRow,
-} from "@mui/material";
-import { EyeIcon } from "lucide-react";
+"use client";
+
+import { selectCameraCategory, updateCameraCategory } from "@/services/maps.service";
+import { Eye, ChevronLeft, ChevronRight, VideoOff } from "lucide-react";
 import { useParams, useRouter, useSearchParams } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useCameraContext } from "../d.hooks/device.hooks";
 import { useTokenJWT } from "@/context/user.context";
 
 export default function DeviceTable() {
   const { camera, setCameras, setCount, selected, count } = useCameraContext();
   const router = useRouter();
-  const page = useSearchParams().get("page");
+  const page = useSearchParams().get("page") || "1";
   const user = useTokenJWT();
   const params = useParams();
+
   const getAllCamerasData = async () => {
-    if (!page) {
+    if (!useSearchParams().get("page")) {
       router.push("?page=1");
       return;
     }
 
-    const response = await selectCameraCategory(
+    const response: any = await selectCameraCategory(
       selected,
       page as string,
-      params.slugs as string,
+      params.slugs as string
     );
-    if (!response) return null;
+    if (!response) return;
 
     setCount({
       private: response.meta.private,
@@ -55,150 +38,150 @@ export default function DeviceTable() {
   const updateCategory = async (body: string, id: string) => {
     setCameras((prev) =>
       prev.map((item) =>
-        item.cctv_public_id == id ? { ...item, category: body } : item,
-      ),
+        item.cctv_public_id === id ? { ...item, category: body } : item
+      )
     );
-    const payload = {
-      category: body as string,
-    };
-    const response = await updateCameraCategory(
-      payload,
-      id,
-      params.slugs as string,
-    );
-    return response;
+    const payload = { category: body };
+    await updateCameraCategory(payload, id, params.slugs as string);
   };
 
   useEffect(() => {
     getAllCamerasData();
   }, [selected, page]);
 
-  const handlePageChange = (
-    event: React.ChangeEvent<unknown>,
-    value: number,
-  ) => {
-    router.push(`?page=${value}`);
-  };
+  const totalPages = count.total_page || 1;
+  const currentPage = Number(page);
 
   return (
-    <Container>
-      <TableContainer
-        className="w-full my-4 shadow-xl overflow-x-auto"
-        component={Paper}
-      >
-        <Table sx={{ minWidth: 650 }}>
-          <TableHead>
-            <TableRow className=" bg-black/20 font-semibold">
-              <TableCell>Nomor</TableCell>
-              <TableCell>Nama CCTV</TableCell>
-              <TableCell className="hidden sm:table-cell">Latitude</TableCell>
-              <TableCell className="hidden sm:table-cell">Longitude</TableCell>
-              <TableCell className="hidden md:table-cell">Kategori</TableCell>
-              <TableCell>Detail</TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody className="w-full">
+    <div className="overflow-hidden rounded-2xl border border-slate-200/80 bg-white shadow-xs transition-colors dark:border-slate-800 dark:bg-slate-900">
+      <div className="overflow-x-auto">
+        <table className="w-full text-left text-xs">
+          {/* HEADER TABLE */}
+          <thead className="border-b border-slate-200 bg-slate-50 text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:border-slate-800 dark:bg-slate-800/50 dark:text-slate-400">
+            <tr>
+              <th className="px-4 py-3.5">No</th>
+              <th className="px-4 py-3.5">Nama CCTV</th>
+              <th className="hidden px-4 py-3.5 sm:table-cell">Latitude</th>
+              <th className="hidden px-4 py-3.5 sm:table-cell">Longitude</th>
+              <th className="hidden px-4 py-3.5 md:table-cell">Kategori</th>
+              <th className="px-4 py-3.5 text-center">Aksi</th>
+            </tr>
+          </thead>
+
+          {/* BODY TABLE */}
+          <tbody className="divide-y divide-slate-200/80 dark:divide-slate-800/80">
             {camera && camera.length > 0 ? (
               camera.map((item, index) => (
-                <TableRow
+                <tr
                   key={item.cctv_public_id ?? index}
-                  className="cursor-pointer hover:bg-lime-300/20 even:bg-black/5"
                   onClick={() =>
-                    (window.location.href = `/${user?.slug}/map?lat=${item.latitude}&lng=${item.longitude}`)
+                    router.push(
+                      `/${params.slugs}/map?lat=${item.latitude}&lng=${item.longitude}`
+                    )
                   }
+                  className="group cursor-pointer transition-colors hover:bg-slate-100/70 dark:hover:bg-slate-800/50"
                 >
-                  <TableCell>{(Number(page) - 1) * 20 + index + 1}</TableCell>
-                  <TableCell className="max-w-[140px] truncate sm:max-w-none">
+                  <td className="px-4 py-3.5 font-mono font-medium text-slate-500 dark:text-slate-400">
+                    {(currentPage - 1) * 20 + index + 1}
+                  </td>
+                  <td className="max-w-[140px] truncate px-4 py-3.5 font-bold text-slate-900 sm:max-w-none dark:text-white">
                     {item.camera_name}
-                  </TableCell>
-                  <TableCell className="hidden sm:table-cell">
+                  </td>
+                  <td className="hidden px-4 py-3.5 font-mono text-slate-600 sm:table-cell dark:text-slate-300">
                     {item.latitude}
-                  </TableCell>
-                  <TableCell className="hidden sm:table-cell">
+                  </td>
+                  <td className="hidden px-4 py-3.5 font-mono text-slate-600 sm:table-cell dark:text-slate-300">
                     {item.longitude}
-                  </TableCell>
-                  <TableCell className="hidden md:table-cell">
-                    {user?.role == "OWNER" || user?.role == "STAFF" ? (
-                      <Select
+                  </td>
+
+                  {/* UPDATE KATEGORI SELECT */}
+                  <td className="hidden px-4 py-3.5 md:table-cell">
+                    {user?.role === "OWNER" || user?.role === "STAFF" ? (
+                      <select
                         value={item.category}
                         onClick={(e) => e.stopPropagation()}
                         onChange={(e) => {
                           e.stopPropagation();
                           updateCategory(
                             e.target.value,
-                            item.cctv_public_id as string,
+                            item.cctv_public_id as string
                           );
                         }}
-                        renderValue={(value) => (
-                          <Chip
-                            size="small"
-                            color={value === "PUBLIC" ? "success" : "warning"}
-                            label={value === "PUBLIC" ? "Public" : "Private"}
-                          />
-                        )}
-                        sx={{
-                          minWidth: 120,
-                          "& .MuiOutlinedInput-notchedOutline": {
-                            border: "none",
-                          },
-                          "& .MuiSelect-select": {
-                            p: 0,
-                            display: "flex",
-                            alignItems: "center",
-                          },
-                        }}
+                        className={`rounded-lg border px-2.5 py-1 text-[11px] font-bold outline-none cursor-pointer ${
+                          item.category === "PUBLIC"
+                            ? "border-emerald-500/30 bg-emerald-500/10 text-emerald-600 dark:text-emerald-400"
+                            : "border-amber-500/30 bg-amber-500/10 text-amber-600 dark:text-amber-400"
+                        }`}
                       >
-                        <MenuItem value="PUBLIC">
-                          <Chip size="small" color="success" label="Public" />
-                        </MenuItem>
-
-                        <MenuItem value="PRIVATE">
-                          <Chip size="small" color="warning" label="Private" />
-                        </MenuItem>
-                      </Select>
+                        <option value="PUBLIC" className="dark:bg-slate-900">Public</option>
+                        <option value="PRIVATE" className="dark:bg-slate-900">Private</option>
+                      </select>
                     ) : (
-                      <Chip
-                        color={
-                          item.category === "PUBLIC" ? "success" : "warning"
-                        }
-                        label={
-                          item.category === "PUBLIC" ? `Public` : "Private"
-                        }
-                      />
+                      <span
+                        className={`inline-block rounded-lg border px-2.5 py-1 text-[11px] font-bold ${
+                          item.category === "PUBLIC"
+                            ? "border-emerald-500/30 bg-emerald-500/10 text-emerald-600 dark:text-emerald-400"
+                            : "border-amber-500/30 bg-amber-500/10 text-amber-600 dark:text-amber-400"
+                        }`}
+                      >
+                        {item.category === "PUBLIC" ? "Public" : "Private"}
+                      </span>
                     )}
-                  </TableCell>
-                  <TableCell>
-                    <Button
-                      color="success"
+                  </td>
+
+                  {/* ACTION STREAM BUTTON */}
+                  <td className="px-4 py-3.5 text-center">
+                    <button
                       onClick={(e) => {
                         e.stopPropagation();
                         router.push(`?page=${page}&id=${item.cctv_public_id}`);
                       }}
+                      className="inline-flex h-8 w-8 items-center justify-center rounded-xl border border-slate-200 bg-slate-100 text-slate-600 transition-colors hover:bg-emerald-500 hover:text-white dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300 dark:hover:bg-emerald-500 dark:hover:text-slate-950 cursor-pointer"
+                      title="Lihat Stream CCTV"
                     >
-                      <EyeIcon size={18} />
-                    </Button>
-                  </TableCell>
-                </TableRow>
+                      <Eye className="h-4 w-4" />
+                    </button>
+                  </td>
+                </tr>
               ))
             ) : (
-              <TableRow>
-                <TableCell>Belum ada Kamera ditambahkan!</TableCell>
-              </TableRow>
+              <tr>
+                <td colSpan={6} className="py-12 text-center">
+                  <div className="flex flex-col items-center justify-center gap-2 text-slate-400">
+                    <VideoOff className="h-8 w-8 text-slate-400" />
+                    <p className="text-xs font-semibold">Belum ada kamera ditambahkan!</p>
+                  </div>
+                </td>
+              </tr>
             )}
-          </TableBody>
-        </Table>
+          </tbody>
+        </table>
+      </div>
 
-        <div className="flex justify-center my-4">
-          <Pagination
-            count={count.total_page || 1}
-            page={Number(page)}
-            onChange={handlePageChange}
-            color="standard"
-            variant="outlined"
-            shape="rounded"
-          />
+      {/* PAGINATION FOOTER */}
+      <div className="flex items-center justify-between border-t border-slate-200 px-4 py-3 dark:border-slate-800">
+        <p className="text-xs font-medium text-slate-500 dark:text-slate-400">
+          Halaman <span className="font-bold text-slate-900 dark:text-white">{currentPage}</span> dari{" "}
+          <span className="font-bold text-slate-900 dark:text-white">{totalPages}</span>
+        </p>
+
+        <div className="flex items-center gap-2">
+          <button
+            disabled={currentPage <= 1}
+            onClick={() => router.push(`?page=${currentPage - 1}`)}
+            className="flex h-8 w-8 items-center justify-center rounded-lg border border-slate-200 bg-white text-slate-600 transition-colors hover:bg-slate-100 disabled:opacity-40 disabled:cursor-not-allowed dark:border-slate-800 dark:bg-slate-900 dark:text-slate-300 dark:hover:bg-slate-800 cursor-pointer"
+          >
+            <ChevronLeft className="h-4 w-4" />
+          </button>
+          <button
+            disabled={currentPage >= totalPages}
+            onClick={() => router.push(`?page=${currentPage + 1}`)}
+            className="flex h-8 w-8 items-center justify-center rounded-lg border border-slate-200 bg-white text-slate-600 transition-colors hover:bg-slate-100 disabled:opacity-40 disabled:cursor-not-allowed dark:border-slate-800 dark:bg-slate-900 dark:text-slate-300 dark:hover:bg-slate-800 cursor-pointer"
+          >
+            <ChevronRight className="h-4 w-4" />
+          </button>
         </div>
-      </TableContainer>
-    </Container>
+      </div>
+    </div>
   );
 }

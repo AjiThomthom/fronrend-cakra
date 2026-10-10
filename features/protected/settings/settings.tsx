@@ -1,39 +1,16 @@
 "use client";
 
-import {
-  Breadcrumbs,
-  Button,
-  ButtonGroup,
-  Container,
-  Paper,
-  Typography,
-  Box,
-  Table,
-  TableBody,
-  TableCell,
-  TableContainer,
-  TableHead,
-  TableRow,
-  TextField,
-  Divider,
-  Avatar,
-  Tooltip,
-} from "@mui/material";
-import { Trash, XIcon } from "lucide-react";
-import Link from "next/link";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useSearchParams } from "next/navigation";
 import SettingsControllers from "./s.controllers";
 import BreadCrumbsSettings from "./s.headers";
 import { ActivityLogComponents } from "./s.component/log-activity";
 import { AgencyDetailComponents } from "./s.component/agency-detail";
 import { AccountComponents } from "./s.component/account-detail";
-import { useEffect } from "react";
 import { ModeAccountContextProvider } from "./s.hooks/account.hooks";
 
 export default function SettingsPage() {
   const searchParams = useSearchParams();
   const activeTab = searchParams.get("set");
-  const router = useRouter();
 
   const renderContent = () => {
     switch (activeTab) {
@@ -50,16 +27,18 @@ export default function SettingsPage() {
 
   return (
     <ModeAccountContextProvider>
-      <Container className="py-10">
-        <BreadCrumbsSettings />
+      <div className="min-h-screen bg-slate-50 px-4 py-8 pt-20 transition-colors duration-300 sm:px-6 lg:px-8 dark:bg-slate-950">
+        <div className="mx-auto max-w-7xl space-y-6">
+          <BreadCrumbsSettings />
 
-        <Paper className="p-6 h-[80vh] flex flex w-full-col flex-col md:flex-row gap-6">
-          <SettingsControllers />
-          <Box className="w-full md:w-3/4 h-[72vh] overflow-x-auto md:overflow-x-none md:overflow-y-auto md:pl-2">
-            {renderContent()}
-          </Box>
-        </Paper>
-      </Container>
+          <div className="flex flex-col rounded-3xl border border-slate-200/80 bg-white p-6 shadow-xs md:flex-row gap-6 transition-colors dark:border-slate-800 dark:bg-slate-900">
+            <SettingsControllers />
+            <div className="w-full md:w-3/4 min-h-[60vh] md:pl-4 md:border-l border-slate-200 dark:border-slate-800">
+              {renderContent()}
+            </div>
+          </div>
+        </div>
+      </div>
     </ModeAccountContextProvider>
   );
 }

@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* TAMBAHKAN BARIS INI: Agar Tailwind v4 membaca class .dark dari next-themes */
+/* Menghubungkan class .dark dari next-themes dengan Tailwind CSS v4 */
 @variant dark (&:where(.dark, .dark *));
 
 :root {
@@ -20,9 +20,68 @@
   --font-mono: var(--font-geist-mono);
 }
 
+/* Failsafe reset untuk menghilangkan gap/garis di tepi layar browser */
+html, body {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100vw !important;
+  max-width: 100% !important;
+  min-height: 100vh !important;
+  box-sizing: border-box !important;
+}
+
 body {
   background-color: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
   transition: background-color 0.3s ease, color 0.3s ease;
+  overflow-x: hidden !important;
+}
+
+/* Custom Scrollbar Modern */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.3);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(16, 185, 129, 0.5);
+}
+
+/* Custom Text Highlight Color */
+::selection {
+  background-color: rgba(16, 185, 129, 0.25);
+  color: inherit;
+}
+
+/* Custom Leaflet Popup Styling */
+.leaflet-popup-content-wrapper {
+  background: rgba(255, 255, 255, 0.9) !important;
+  backdrop-filter: blur(12px) !important;
+  border-radius: 1rem !important;
+  border: 1px solid rgba(226, 232, 240, 0.8) !important;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1) !important;
+}
+
+.dark .leaflet-popup-content-wrapper {
+  background: rgba(15, 23, 42, 0.9) !important;
+  border: 1px solid rgba(30, 41, 59, 0.8) !important;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5) !important;
+}
+
+.leaflet-popup-tip {
+  background: rgba(255, 255, 255, 0.9) !important;
+}
+
+.dark .leaflet-popup-tip {
+  background: rgba(15, 23, 42, 0.9) !important;
 }

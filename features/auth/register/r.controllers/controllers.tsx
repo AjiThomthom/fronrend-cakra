@@ -1,8 +1,9 @@
 "use client";
 
-import { Container, Paper } from "@mui/material";
 import Image from "next/image";
 import { ReactNode } from "react";
+import { motion } from "framer-motion";
+import { ShieldCheck } from "lucide-react";
 
 export default function RegisterController({
   children,
@@ -10,20 +11,51 @@ export default function RegisterController({
   children: ReactNode;
 }) {
   return (
-    <Container className="flex items-center justify-center h-screen max-w-xl">
-      <Paper className="px-5 py-3 gap-y-2 flex flex-col w-72 md:w-xl">
-        <div className="flex gap-x-2 items-center">
-          <div className=" my-4">
-            <Image src={"/CAKRA.png"} alt="cakra.png" width={50} height={50} />
+    <div className="flex min-h-[calc(100vh-4rem)] w-full items-center justify-center bg-slate-50 px-4 py-8 transition-colors duration-300 dark:bg-slate-950">
+      <motion.div
+        initial={{ opacity: 0, y: 15 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.3 }}
+        className="w-full max-w-2xl"
+      >
+        {/* Kartu Register dengan Kontras Tegas */}
+        <div className="rounded-3xl border border-slate-200/90 bg-white p-6 shadow-2xl transition-colors duration-300 md:p-8 dark:border-slate-800 dark:bg-slate-900/90 dark:shadow-black/70">
+          <div className="space-y-6">
+            {/* Header Logo & Judul */}
+            <div className="flex flex-col items-center text-center">
+              
+              {/* Wadah Logo Terisolasi (Kontras Tajam di Dark Mode) */}
+              <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-white p-2 shadow-md border border-slate-200/80 dark:border-emerald-500/30 dark:shadow-emerald-500/10">
+                <Image
+                  src="/CAKRA.png"
+                  alt="CAKRA Logo"
+                  width={42}
+                  height={42}
+                  priority
+                  className="object-contain"
+                />
+              </div>
+
+              {/* Badge Indicator */}
+              <div className="mt-4 inline-flex items-center gap-1.5 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3 py-1 text-xs font-semibold text-emerald-600 dark:bg-emerald-500/20 dark:text-emerald-400">
+                <ShieldCheck className="h-3.5 w-3.5" />
+                <span>Portal Keamanan CAKRA</span>
+              </div>
+
+              {/* Judul & Deskripsi */}
+              <h1 className="mt-3 text-2xl font-black tracking-tight text-slate-900 md:text-3xl dark:text-white">
+                Buat Akun Baru
+              </h1>
+              <p className="mt-1 text-xs font-medium text-slate-500 md:text-sm dark:text-slate-300">
+                Lengkapi data di bawah untuk mulai menggunakan CAKRA.
+              </p>
+            </div>
+
+            {/* Content / Form */}
+            <div className="pt-2">{children}</div>
           </div>
-          <h1 className="text-xl font-semibold text-black">CAKRA</h1>
         </div>
-        <h2 className="font-bold">Buat Akun Baru</h2>
-        <p className="md:text-sm text-[12px]">
-          Lengkapi data di bawah untuk mulai menggunakan CAKRA.
-        </p>
-        {children}
-      </Paper>
-    </Container>
+      </motion.div>
+    </div>
   );
 }

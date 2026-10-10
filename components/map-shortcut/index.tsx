@@ -1,6 +1,6 @@
+"use client";
+
 import { CameraSchema } from "@/@types/camera.type";
-import { SummaryType } from "@/@types/home.type";
-import { getAllCamera } from "@/services/maps.service";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import { Cctv } from "lucide-react";
@@ -8,7 +8,7 @@ import { useParams, useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { renderToString } from "react-dom/server";
 
-export default function MapShortcut(data: { data: CameraSchema[] }) {
+export default function MapShortcut({ data }: { data: CameraSchema[] }) {
   const mapRef = useRef<HTMLDivElement>(null);
   const mapInstanceRef = useRef<L.Map | null>(null);
   const router = useRouter();
@@ -18,7 +18,13 @@ export default function MapShortcut(data: { data: CameraSchema[] }) {
     long: number;
   } | null>(null);
 
+  // Ambil lokasi pengguna untuk menentukan titik tengah peta mini
   useEffect(() => {
+    if (!navigator.geolocation) {
+      setCoordinate({ lat: -6.2383, long: 106.9756 }); // Default Jakarta/Bekasi
+      return;
+    }
+
     const watchId = navigator.geolocation.watchPosition(
       (position) => {
         const { latitude: lat, longitude: long } = position.coords;
@@ -26,34 +32,34 @@ export default function MapShortcut(data: { data: CameraSchema[] }) {
       },
       (err) => {
         console.error("Geolocation error", err.message);
-      },
+        setCoordinate({ lat: -6.2383, long: 106.9756 });
+      }
     );
 
     return () => navigator.geolocation.clearWatch(watchId);
   }, []);
 
+  // Inisialisasi Peta Mini Non-Interaktif
   useEffect(() => {
     if (!mapRef.current || mapInstanceRef.current) return;
     if (!coordinate) return;
+
     const map = L.map(mapRef.current, {
-      center: [coordinate?.lat, coordinate?.long],
+      center: [coordinate.lat, coordinate.long],
       zoom: 15,
       dragging: false,
       scrollWheelZoom: false,
       touchZoom: false,
       zoomControl: false,
-      minZoom: 13,
       doubleClickZoom: false,
+      attributionControl: false,
     });
 
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-      attribution: "&copy; OpenStreetMap contributors",
+      maxZoom: 19,
     }).addTo(map);
 
     mapInstanceRef.current = map;
-
-    const t1 = setTimeout(() => map.invalidateSize(), 100);
-    const t2 = setTimeout(() => map.invalidateSize(), 500);
 
     const resizeObserver = new ResizeObserver(() => {
       map.invalidateSize();
@@ -61,40 +67,42 @@ export default function MapShortcut(data: { data: CameraSchema[] }) {
     resizeObserver.observe(mapRef.current);
 
     return () => {
-      clearTimeout(t1);
-      clearTimeout(t2);
       resizeObserver.disconnect();
       map.remove();
       mapInstanceRef.current = null;
     };
   }, [coordinate]);
 
+  // Render Marker CCTV
   useEffect(() => {
     const map = mapInstanceRef.current;
-
-    if (!map) {
-      console.log(`Peta Belum siap, skip render marker`);
-      return;
-    }
+    if (!map || !data) return;
 
     const cctvSvgString = renderToString(
-      <Cctv size={18} className="text-white" />,
+      <Cctv size={16} className="text-white" />
     );
 
-    const cctvIcon = L.divIcon({
-      html: `
-      <div class="flex items-center justify-center w-8 h-8 bg-green-600 rounded-full border-2 border-white shadow-lg transform -translate-y-1/2">
-        ${cctvSvgString}
-      </div>
-    `,
-      className: "custom-div-icon",
-      iconSize: [32, 32],
-      iconAnchor: [16, 32],
-    });
+    const getCctvIcon = (category: string) => {
+      const isPublic = category === "PUBLIC";
+      const bgClass = isPublic ? "bg-emerald-500" : "bg-amber-500";
 
-    data.data.forEach((cam: CameraSchema) => {
+      return L.divIcon({
+        html: `
+          <div class="flex items-center justify-center w-7 h-7 ${bgClass} rounded-full border-2 border-white shadow-md">
+            ${cctvSvgString}
+          </div>
+        `,
+        className: "",
+        iconSize: [28, 28],
+        iconAnchor: [14, 14],
+      });
+    };
+
+    data.forEach((cam: CameraSchema) => {
       if (cam.latitude && cam.longitude) {
-        L.marker([cam.latitude, cam.longitude], { icon: cctvIcon }).addTo(map);
+        L.marker([cam.latitude, cam.longitude], {
+          icon: getCctvIcon(cam.category || "PUBLIC"),
+        }).addTo(map);
       }
     });
   }, [data, coordinate]);
@@ -103,8 +111,8 @@ export default function MapShortcut(data: { data: CameraSchema[] }) {
     <div
       ref={mapRef}
       onClick={() => router.push(`/${params.slugs}/map`)}
-      style={{ width: "100%", height: "100%" }}
-      className="z-50"
+      className="relative z-0 h-full w-full cursor-pointer overflow-hidden rounded-xl"
+      title="Klik untuk membuka Peta Lengkap"
     />
   );
 }

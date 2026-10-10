@@ -1,8 +1,7 @@
-// app/(auth)/layout.tsx atau app/layout.tsx
 import TopBarNav from "@/components/top-bar";
 import ContainerContextClient from "@/context/context";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v16-appRouter";
-import { AppThemeProvider } from "./providers"; // <--- Perhatikan jalur impornya di sini
+import { AppThemeProvider } from "./providers";
 import "./globals.css";
 import "leaflet/dist/leaflet.css";
 import { Metadata } from "next";
@@ -20,17 +19,20 @@ export default async function AuthLayout({
 }) {
   const cookie = await (await cookies()).get("access_token");
   return (
-    <html suppressHydrationWarning lang="id">
+    <html suppressHydrationWarning lang="id" className="m-0 p-0 overflow-x-hidden">
       <body 
         suppressHydrationWarning 
-        className="min-h-screen bg-slate-50 text-slate-900 transition-colors duration-300 dark:bg-slate-950 dark:text-slate-100"
+        className="m-0 p-0 w-full min-h-screen overflow-x-hidden bg-slate-50 text-slate-900 transition-colors duration-300 dark:bg-slate-950 dark:text-slate-100"
       >
         <Suspense>
           <ContainerContextClient user={cookie}>
             <AppRouterCacheProvider>
               <AppThemeProvider>
                 <TopBarNav />
-                <div className="mt-16">{children}</div> {/* Sedikit disesuaikan agar tidak menumpuk dengan topbar */}
+                {/* m-0 p-0 dan mt-16 untuk memberikan ruang navigasi atas tanpa membuat overflow */}
+                <main className="m-0 p-0 mt-16 w-full min-h-[calc(100vh-4rem)] flex flex-col overflow-x-hidden">
+                  {children}
+                </main>
               </AppThemeProvider>
             </AppRouterCacheProvider>
           </ContainerContextClient>
